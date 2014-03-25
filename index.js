@@ -1,12 +1,15 @@
-var Hapi = require('hapi')
-var server = Hapi.createServer('localhost', 8000);
+var Hapi = require('hapi');
+var host = 'localhost';
+var port = 8000;
+var server = Hapi.createServer(host, port);
 
 server.route({
 	method: 'GET',
-	path: '/hello',
-	handler: function (request, reply) {
-		reply('hello world');
+	path: '/{path*}',
+    handler: {
+        directory: { path: './dist', listing: false, index: true }
 	}
 });
 
 server.start();
+console.log('Running @ '+host+':'+port);
