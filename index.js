@@ -14,3 +14,4 @@ server.route({
 
 server.start();
 console.log('Running at '+host+':'+port);
+console.log('test');
