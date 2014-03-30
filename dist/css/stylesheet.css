@@ -1,0 +1,87 @@
+html{
+	height: 100%;
+}
+
+body{
+	background-color: #4479D4;
+}
+h1 {
+	font-family:"Love Ya Like a Sister";
+	background-color: #00A08A;
+	border-radius: 0.3em;
+	padding: 0.2em;
+	margin: 0.2em;
+	text-align: center;
+	color:#FFA400;
+	text-shadow: 0.02em 0.02em #00685A;
+	box-shadow:         inset 0 0 0.5em #00685A;
+	-moz-box-shadow:    inset 0 0 0.5em #00685A;
+    -webkit-box-shadow: inset 0 0 0.5em #00685A;
+    
+}
+
+img {
+	width: 90%;
+	padding: 1%;
+	margin: 4%;
+	background-color: #FFCD73;
+}
+
+p, li {
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+.poem {
+	background-color: #1049A9;
+	border: 0.2em solid #3216B0;
+	margin: 1em;
+}
+
+.haiku {
+	background-color: #3216B0;
+	padding: 5% 10% 5% 10%;
+	width: 50%;
+	margin: 0% 15% 5% 15%;
+	font-family: "Indie Flower";
+	color: #FFFFFF;
+	font-size: 1.05em;
+	font-size: 4.05vw;
+}
+.nav{
+	padding: 0em;
+	margin: 0.5em 1em 1em 1em;
+	list-style-type: none;
+}
+
+.button {
+    display: block;
+    height: 1.875em;
+    line-height: 1.875em;
+    width: 100%;
+
+    
+    color: #FFF;
+    text-align: center;
+    border: solid #644AD8 1px;
+    /*border-radius: 5px;*/
+    text-decoration: none;
+
+    /* Gradient */
+    background: #644AD8;
+    background: -moz-linear-gradient(top,  #8370D8 1%, #644AD8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#8370D8), color-stop(100%,#644AD8));
+    background: -webkit-linear-gradient(top,  #8370D8 1%,#644AD8 100%);
+    background: -o-linear-gradient(top,  #8370D8 1%,#644AD8 100%);
+    background: -ms-linear-gradient(top,  #8370D8 1%,#644AD8 100%);
+    background: linear-gradient(to bottom,  #8370D8 1%,#644AD8 100%);
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 1px 0 rgba(255,255,255, 0.3), inset 0 1px 0 rgba(255,255,255, 0.3);
+}
+
+@media only screen and (min-device-width: 769px){
+	.button:hover {
+	    background: #8370D8;
+	    text-decoration: none;
+	    filter: none;
+	}
+}
