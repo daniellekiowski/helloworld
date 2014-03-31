@@ -7,18 +7,21 @@
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
 <body>
+
 	<!--Hedgeku header and logo-->
 	<h1>Hedgeku</h1>
 	<!--Main Nav-->
 	<div>
 		<ul class = "nav">
-			<li class = "button">Poetry</li>
-			<li class = "button">Contact</li>
-			<li class = "button">About Me</li>
+			<li>
+				<a href="index.html" class = "button" id="poetry">Poetry</a>
+			</li>
+			<li class = "button" id="contact">Contact</li>
+			<li class = "button" id="about">About Me</li>
 		</ul>
 	</div>
 
-	<div class = "wmuSlider">
+	<div class = "poetry wmuSlider">
 		<div class = "wmuSliderWrapper">
 		<article class = "poem">
 			<img src="img/candy_hedgehog.jpg" alt="Hedgehog in a box of chocolates" title="Prickly on the outside with a squishy center">
@@ -41,7 +44,7 @@
 		<article class = "poem">
 			<img src="img/hedgehog_egg.jpg" alt="Hedgehog sits in egg cup" title= "Humpty dumpty sat in a cup... No wait...">
 			<p class = "haiku">
-				
+
 				Whether the hedgie is <br>
 				Hard boiled or over easy<br>
 				It's adorable
@@ -49,9 +52,14 @@
 		</article>
 	</div>
 </div>
+</div>
 
-<script type="text/javascript" src="scripts/jquery.js"></script>
-<script type="text/javascript" src="scripts/wmuslider.js"></script>
-<script type="text/javascript" src="scripts/script.js"></script>
+
+	<div>
+		<img src="img/hedgehog_chair.jpg" class = "fill_img">
+	</div>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
+
 </body>
 </html>

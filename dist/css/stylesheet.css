@@ -1,9 +1,12 @@
 html{
 	height: 100%;
+	width: 100%;
+
 }
 
 body{
 	background-color: #4479D4;
+	position: absolute;
 }
 h1 {
 	font-family:"Love Ya Like a Sister";
@@ -76,6 +79,24 @@ p, li {
     background: linear-gradient(to bottom,  #8370D8 1%,#644AD8 100%);
     text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
     box-shadow: 0 1px 0 rgba(255,255,255, 0.3), inset 0 1px 0 rgba(255,255,255, 0.3);
+}
+
+.selected{
+	background-image: none;
+	background-color:#644AD8;
+}
+
+@media only screen and (min-width: 481px){
+	h1{
+		margin: 0px;
+		font-size: 3em;
+		display: inline-block;
+		position: fixed;
+		width: 7em;
+		height: 2.5em;
+		line-height: 2.5em;
+
+	}
 }
 
 @media only screen and (min-device-width: 769px){
