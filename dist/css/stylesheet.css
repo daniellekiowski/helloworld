@@ -32,9 +32,15 @@ img {
 
 p, li {
 	font-family:Verdana, Geneva, sans-serif;
+	color: #FFF;
 }
 
-.poem {
+p {
+	margin: 0% 15% 5% 15%;
+	text-align: center;
+}
+
+.poem, .about {
 	background-color: #1049A9;
 	border: 0.2em solid #3216B0;
 	margin: 1em;
@@ -138,12 +144,18 @@ p, li {
 		background: -ms-linear-gradient(left,  #FFBB40 75%,#FFA400 100%);
 		background: linear-gradient(to right,  #FFBB40 75%,#FFA400 100%);
 	}
-	.poetry, .fill_img{
+	.poetry, .fill_img, .about{
 		z-index: -2;
 		position: relative;
 		top: 8em;
 		width: 80%;
 		left: 15%;
+	}
+	.about{
+		left: 85%;
+	}
+	p{
+		width: 100%;
 	}
 	.haiku{
 		font-size: 1.25em;
@@ -181,7 +193,7 @@ p, li {
 		left: 360px;
 	}
 
-	.poetry, .fill_img{
+	.poetry, .fill_img, .about{
 		width: 90%;
 		left: 30%;
 	}
