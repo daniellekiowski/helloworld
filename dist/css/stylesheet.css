@@ -19,8 +19,8 @@ h1 {
 	text-shadow: 0.02em 0.02em #00685A;
 	box-shadow:         inset 0 0 0.5em #00685A;
 	-moz-box-shadow:    inset 0 0 0.5em #00685A;
-    -webkit-box-shadow: inset 0 0 0.5em #00685A;
-    
+	-webkit-box-shadow: inset 0 0 0.5em #00685A;
+
 }
 
 img {
@@ -48,7 +48,7 @@ p, li {
 	font-family: "Indie Flower";
 	color: #FFFFFF;
 	font-size: 1.05em;
-	font-size: 4.05vw;
+	font-size: 3.95vw;
 }
 .nav{
 	padding: 0em;
@@ -56,29 +56,34 @@ p, li {
 	list-style-type: none;
 }
 
-.button {
-    display: block;
-    height: 1.875em;
-    line-height: 1.875em;
-    width: 100%;
+.button, .button-nav {
+	display: block;
+	height: 1.875em;
+	line-height: 1.875em;
+	width: 100%;
 
-    
-    color: #FFF;
-    text-align: center;
-    border: solid #644AD8 1px;
-    /*border-radius: 5px;*/
-    text-decoration: none;
 
-    /* Gradient */
-    background: #644AD8;
-    background: -moz-linear-gradient(top,  #8370D8 1%, #644AD8 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#8370D8), color-stop(100%,#644AD8));
-    background: -webkit-linear-gradient(top,  #8370D8 1%,#644AD8 100%);
-    background: -o-linear-gradient(top,  #8370D8 1%,#644AD8 100%);
-    background: -ms-linear-gradient(top,  #8370D8 1%,#644AD8 100%);
-    background: linear-gradient(to bottom,  #8370D8 1%,#644AD8 100%);
-    text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
-    box-shadow: 0 1px 0 rgba(255,255,255, 0.3), inset 0 1px 0 rgba(255,255,255, 0.3);
+	color: #FFF;
+	text-align: center;
+	border: solid #644AD8 1px;
+	border-radius: 5px;
+	text-decoration: none;
+
+	/* Gradient */
+	background: #644AD8;
+	background: -moz-linear-gradient(top,  #8370D8 1%, #644AD8 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#8370D8), color-stop(100%,#644AD8));
+	background: -webkit-linear-gradient(top,  #8370D8 1%,#644AD8 100%);
+	background: -o-linear-gradient(top,  #8370D8 1%,#644AD8 100%);
+	background: -ms-linear-gradient(top,  #8370D8 1%,#644AD8 100%);
+	background: linear-gradient(to bottom,  #8370D8 1%,#644AD8 100%);
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
+	box-shadow: 0 1px 0 rgba(255,255,255, 0.3), inset 0 1px 0 rgba(255,255,255, 0.3);
+}
+
+.button-nav{
+	width: 100%;
+	border-radius: 0px;
 }
 
 .selected{
@@ -89,20 +94,105 @@ p, li {
 @media only screen and (min-width: 481px){
 	h1{
 		margin: 0px;
-		font-size: 3em;
-		display: inline-block;
+		font-size: 2em;
+		display: block;
 		position: fixed;
-		width: 7em;
+		width: 35%;
+		height: 2.5em;
+		line-height: 2.5em;
+		border-radius: 0 0 0.3em 0;
+		
+
+	}
+	h1:after{
+		content: "";
+		display: inline-block;
+		height:2em;
+		width: 100%;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: -1;
+		background: #FFBB40;
+		background: -moz-linear-gradient(top,  #FFBB40 75%, #FFA400 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(75%,#FFBB40), color-stop(100%,#FFA400));
+		background: -webkit-linear-gradient(top,  #FFBB40 75%,#FFA400 100%);
+		background: -o-linear-gradient(top,  #FFBB40 75%,#FFA400 100%);
+		background: -ms-linear-gradient(top,  #FFBB40 75%,#FFA400 100%);
+		background: linear-gradient(to bottom,  #FFBB40 75%,#FFA400 100%);
+	}
+	h1:before{
+		content: "";
+		display: inline-block;
+		height:100%;
+		width: 2em;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: -1;
+		background: #FFBB40;
+		background: -moz-linear-gradient(left,  #FFBB40 75%, #FFA400 100%);
+		background: -webkit-gradient(linear, left top, right top, color-stop(75%,#FFBB40), color-stop(100%,#FFA400));
+		background: -webkit-linear-gradient(left,  #FFBB40 75%,#FFA400 100%);
+		background: -o-linear-gradient(left,  #FFBB40 75%,#FFA400 100%);
+		background: -ms-linear-gradient(left,  #FFBB40 75%,#FFA400 100%);
+		background: linear-gradient(to right,  #FFBB40 75%,#FFA400 100%);
+	}
+	.poetry, .fill_img{
+		z-index: -2;
+		position: relative;
+		top: 8em;
+		width: 80%;
+		left: 15%;
+	}
+	.haiku{
+		font-size: 1.25em;
+	}
+
+	.nav{
+		display: inline-block;
+		width: 60%;
+		position: fixed;
+		right: 0px;
+		height: 1.875em;
+	}
+	li{
+		display: inline-block;
+		width: 28%;
+		float: left;
+		margin: 2.5%;
+	}
+	.button-nav{
+		border-radius: 5px;
+	}
+}
+
+@media only screen and (min-width: 970px){
+	h1{
+		font-size: 2.5em;
+		width: 340px;
 		height: 2.5em;
 		line-height: 2.5em;
 
 	}
+	.nav{ 
+		top: 1em;
+		width: 582px;
+		left: 360px;
+	}
+
+	.poetry, .fill_img{
+		width: 90%;
+		left: 30%;
+	}
+
+
 }
 
 @media only screen and (min-device-width: 769px){
-	.button:hover {
-	    background: #8370D8;
-	    text-decoration: none;
-	    filter: none;
+	.button:hover, .button-nav:hover {
+		background: #8370D8;
+		text-decoration: none;
+		filter: none;
 	}
 }

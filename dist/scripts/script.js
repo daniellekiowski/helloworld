@@ -23,3 +23,16 @@
 		return false;
 	});
 
+	$("#contact").click(function(){
+		$("#poetry").removeClass("selected");
+		$(".fill_img").show();
+		$(".poetry").hide();
+	});
+
+
+
+	$("#about").click(function(){
+		$("#poetry").removeClass("selected");
+		$(".fill_img").show();
+		$(".poetry").hide();
+	});
