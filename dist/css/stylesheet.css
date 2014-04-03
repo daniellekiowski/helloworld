@@ -62,7 +62,7 @@ p {
 	list-style-type: none;
 }
 
-.button, .button-nav {
+.button, .button-nav, .button-quiz {
 	display: block;
 	height: 1.875em;
 	line-height: 1.875em;
@@ -87,7 +87,7 @@ p {
 	box-shadow: 0 1px 0 rgba(255,255,255, 0.3), inset 0 1px 0 rgba(255,255,255, 0.3);
 }
 
-.button-nav{
+.button-nav, .button-quiz{
 	width: 100%;
 	border-radius: 0px;
 }
@@ -174,8 +174,11 @@ p {
 		float: left;
 		margin: 2.5%;
 	}
-	.button-nav{
+	.button-nav, .button-quiz{
 		border-radius: 5px;
+	}
+	.button-quiz{
+		width: 75%;
 	}
 }
 
