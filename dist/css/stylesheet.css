@@ -48,13 +48,19 @@ p {
 
 .haiku {
 	background-color: #3216B0;
-	padding: 5% 10% 5% 10%;
 	width: 50%;
 	margin: 0% 15% 5% 15%;
+	padding: 5% 10% 5% 10%;
+}
+.haiku>p {
 	font-family: "Indie Flower";
+	margin: 0px;
+	text-align: left;
 	color: #FFFFFF;
 	font-size: 1.05em;
 	font-size: 3.95vw;
+	padding-left: 1.5em;
+	text-indent: -1.5em;
 }
 .nav{
 	padding: 0em;
@@ -157,7 +163,7 @@ p {
 	p{
 		width: 100%;
 	}
-	.haiku{
+	.haiku>p{
 		font-size: 1.25em;
 	}
 
